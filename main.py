@@ -2,8 +2,6 @@ from database import Base, engine, SessionLocal
 from sqlalchemy import select
 from sqlalchemy.orm import selectinload, joinedload
 from models import Product, Seller
-#Base.metadata.drop_all(bind=engine)
-Base.metadata.create_all(bind=engine)
 
 
 session = SessionLocal()
